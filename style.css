@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.flag{
+    width: 300px;
+    height: 200px;
+    border: 1px solid gray;
+  
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+
+/* Ukraine */
+
+.ukraine{
+   
+    background: linear-gradient(to bottom,
+        blue 50%,
+        yellow 50%);
+}
+
+
+/* Japan */
+
+.japan{
+  position: relative;
+}
+.japan::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    clip-path: circle(20.8% at 50% 50%);
+
+}
+
+
+/* Iceland */
+
+.iceland{
+    position: relative;
+    background: linear-gradient(
+    #00519d 40%,
+    #fff 40%,
+    #fff 45%,
+    #dd1833 45%,
+    #dd1833 55%,
+    #fff 55%,
+    #fff 60%,
+    #00519d 0
+  )
+}
+.iceland::before {
+    position: absolute;
+    content: "";
+    left: 86px;
+    background: #dd1833;
+    height: 50%;
+    width: 20px;
+    box-shadow: 0 100px #dd1833, 10px -12px white, -10px -12px white,
+      10px 110px white, -10px 110px white;
+  }
+
+  /* Czech */
+
+.czech{
+    position: relative;
+    background: linear-gradient(to bottom,
+        white 50%,
+        red 50%);
+}
+
+.czech::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background-color: blue;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
